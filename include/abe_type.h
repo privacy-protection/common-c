@@ -8,6 +8,7 @@
 #define UC unsigned char
 #define MAX_ELEMENT_LEN 1024
 
+// Element 用于go和c进行数据交换的结构体
 struct Element
 {
     UC *data;
@@ -16,6 +17,7 @@ struct Element
 
 typedef struct Element Element;
 
+// Edge 图中的边结构
 struct Edge
 {
     int node, next;
@@ -23,6 +25,7 @@ struct Edge
 
 typedef struct Edge Edge;
 
+// Graph 用于存储图结构
 struct Graph
 {
     Edge *e;
