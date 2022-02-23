@@ -14,7 +14,9 @@
 /// \brief 用于go和c进行数据交换的结构体
 struct Element
 {
+    /// \brief 数据内容
     UC *data;
+    /// \brief 数据长度
     int len;
 };
 
