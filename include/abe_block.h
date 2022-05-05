@@ -19,7 +19,8 @@ void decompose(pairing_t *pairing, Element *data, Element **result, int *block_l
 /// \param blocks 分组后的数据
 /// \param block_len 组数
 /// \param result 返回的原数据
-void compose(Element *blocks, int block_len, Element *result);
+/// \return 返回是否成功，0为成功，其余为失败
+int compose(Element *blocks, int block_len, Element *result);
 
 /// \brief 分组中用于计算给定长度的数据需要使用的组数
 /// \param pairing 双线性映射对象
