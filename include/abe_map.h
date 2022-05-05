@@ -41,12 +41,10 @@ void map_init(Map *m);
 /// \brief 清空map所有元素
 void map_clear(Map *m);
 
-/// \brief map列表扩展
-/// \param m map对象
-/// \param hash 待扩展的列表的哈希值
+/// \brief 将(key, value)存储到map中
 void map_put(Map *m, int key, int value);
 
-/// \brief 将(key, value)存储到map中
+/// \brief 获取map中key对应的数据
 bool map_get(Map *m, int key, int *value);
 
 #endif
